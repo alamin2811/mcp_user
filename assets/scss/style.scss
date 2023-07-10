@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: Exon
+Theme URL: #
+Author: uigigs
+Author URL: https://themeforest.net/user/uigigs/portfolio
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+01. Settings style
+02. Base style
+03. Component Style
+04. Header style
+05. Banner Style
+06. home1 Style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/ 
+@import './settings/variables';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import './helper/reset.all'; 
+@import './helper/helper.theme';
+@import './utilities/uig.spacing';
+
+/*--------------------------------
+03. Component Style
+--------------------------------*/
+
+/*--------------------------------
+04. Header style
+--------------------------------*/
+@import './sections/header/header';
+@import './sections/header/mobile-menu';
+
+/*--------------------------------
+05. body
+--------------------------------*/
+@import './sections/wp-plugin/wp-plugin';
+
+/*--------------------------------
+10. Footer Section
+--------------------------------*/
+@import './sections/footer/footer';
+
+/*---------------------------------
+user-header
+---------------------------------*/
+@import './sections/header/user-header';
+
+/*---------------------------------
+user-body
+---------------------------------*/
+@import './sections/body/user-body';
+@import './sections/body/side-menu';
+@import './sections/body/my-plugin';
+@import './sections/body/modals';

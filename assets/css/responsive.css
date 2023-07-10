@@ -1,0 +1,158 @@
+@media screen and (max-width: 1599px) {
+  .side-menu {
+    width: 240px;
+  }
+  .user-body-section.active {
+    padding-left: 280px;
+  }
+  .user-body-container {
+    padding-right: 40px;
+  }
+  .addons-table .addons-tr-ist li {
+    padding: 0px 10px;
+  }
+  .my-plugin-table .my-plugin-table-header .table-row .table-cell,
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell {
+    padding: 10px 20px;
+  }
+  .my-plugin-table .table-accordion-inner {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .user-body-section {
+    padding-left: 40px;
+  }
+  .user-body-section.active {
+    padding-left: 40px;
+  }
+  .user-body-section.active .user-body-container {
+    padding-right: 40px;
+  }
+  .user-body-container {
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-content {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .my-plugin-table-header {
+    display: none;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(1) {
+    width: 40%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(2) {
+    width: 30%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(3) {
+    width: 30%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(4) {
+    width: 40%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(5) {
+    width: 30%;
+    text-align: left !important;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell .table-btn-cell {
+    justify-content: flex-start;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell strong {
+    display: block;
+  }
+  .table-tab-content-inner {
+    overflow-x: scroll;
+  }
+  .table-tab-content-inner .addons-table.table-accordion-inner {
+    min-width: 901px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .user-body-section {
+    padding-left: 20px;
+  }
+  .user-body-container {
+    padding-right: 20px;
+  }
+  .user-header-section .header-right form {
+    display: none;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(1) {
+    width: 50%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(2) {
+    width: 50%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(3) {
+    width: 50%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(4) {
+    width: 50%;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell:nth-child(5) {
+    width: 50%;
+  }
+  .table-tab-content-inner .row-card ul li {
+    overflow: hidden;
+  }
+  .pagination ul {
+    padding: 0px 6px;
+  }
+  .mobile-menu-top form {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .my-plugin-card-header form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .my-plugin-card-header .filter-dropdown {
+    margin-bottom: 16px;
+  }
+  .notificationa-and-language {
+    display: flex;
+  }
+  .user-header-right-list .language-dropdown {
+    display: none;
+  }
+  .user-header-right-list {
+    width: auto;
+  }
+  .user-header-right-list .notification {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wp-plugins-card-body form {
+    flex-wrap: wrap;
+  }
+  .table-tab-content-inner .row-card p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell strong {
+    font-size: 12px;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell p {
+    font-size: 13px;
+  }
+  .my-plugin-table .my-plugin-table-body .table-row .table-cell span {
+    font-size: 12px;
+  }
+}
