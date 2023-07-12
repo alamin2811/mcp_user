@@ -28438,6 +28438,9 @@ CSS table of content
   height: 85px;
   padding: 15px 0px 20px 0px;
 }
+.wp-plugins-card-body .wp-card-dropdown label {
+  display: none;
+}
 .wp-plugins-card-body p {
   font-weight: 500;
   font-size: 14px;
