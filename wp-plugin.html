@@ -26,7 +26,7 @@
     <section class="user-header-section">
         <div class="header-left">
             <div class="user-menu-button">
-                <button id="userMenuBtn">
+                <button id="userMenuBtn" type="button" aria-controls="sidebar" aria-label="toggle-menu-button">
                     <span class="bar1"></span>
                     <span class="bar2"></span>
                     <span class="bar3"></span>
@@ -36,8 +36,9 @@
         </div>
         <div class="header-right">
             <form action="/">
+                <label for="search-input1" class="m-0"></label>
                 <button><img src="./assets/images/icon/search.svg" alt="icon"></button>
-                <input type="text" placeholder="Search here...">
+                <input type="text" id="search-input1" placeholder="Search here...">
             </form>
             <ul class="user-header-right-list">
                 <li>
@@ -102,8 +103,9 @@
                 </div>
 
                 <form action="/">
+                    <label for="search-input2" class="m-0"></label>
                     <button><img src="./assets/images/icon/search.svg" alt="icon"></button>
-                    <input type="text" placeholder="Search here...">
+                    <input type="text" id="search-input2" placeholder="Search here...">
                 </form>
 
             </div>
@@ -223,6 +225,7 @@
                                     </div>
                                     <div class="wp-plugins-card-body">
                                         <div class="wp-card-dropdown">
+                                            <label for="creditguard-select" class="m-0"></label>
                                             <div class="payment-dropdown wp-dropdown">
                                                 <select id="creditguard-select" class="wp-dropdown-select">
                                                     <option value="default">Basic</option>
@@ -264,6 +267,7 @@
                                     </div>
                                     <div class="wp-plugins-card-body">
                                         <div class="wp-card-dropdown">
+                                            <label for="tranzila-select" class="m-0"></label>
                                             <div class="payment-dropdown wp-dropdown">
                                                 <select id="tranzila-select" class="wp-dropdown-select">
                                                     <option value="default">Basic</option>
@@ -308,7 +312,8 @@
                                         <div class="wp-card-dropdown"></div>
 
                                         <form>
-                                            <input type="text" value="₪585.00ILS">
+                                            <label for="wp-plugin-value" class="m-0"></label>
+                                            <input type="text" id="wp-plugin-value" value="₪585.00ILS">
                                             <button><img src="./assets/images/icon/shopping-cart.svg" alt="icon">Order
                                                 Now</button>
                                         </form>
@@ -448,7 +453,7 @@
                                                     <div class="tab-content" id="2Content">
                                                         <div class="tab-pane fade show active" id="license"
                                                             role="tabpanel" aria-labelledby="license-tab">
-                                                            <div class="2-content-inner">
+                                                            <div class="table-tab-content-inner">
                                                                 <div class="row table-accordion-inner">
                                                                     <div class="col-md-5">
                                                                         <label>License Key</label>
