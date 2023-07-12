@@ -26,11 +26,11 @@
     <section class="user-header-section">
         <div class="header-left">
             <div class="user-menu-button">
-                <button id="userMenuBtn" type="button" aria-controls="sidebar" aria-label="toggle-menu-button">
+                <button id="userMenuBtn" type="button" aria-controls="sidebar" aria-label="Toggle menu">
                     <span class="bar1"></span>
                     <span class="bar2"></span>
                     <span class="bar3"></span>
-                </button>
+                  </button>                  
             </div>
             <a href="index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
         </div>
@@ -227,7 +227,7 @@
                                         <div class="wp-card-dropdown">
                                             <label for="creditguard-select" class="m-0"></label>
                                             <div class="payment-dropdown wp-dropdown">
-                                                <select id="creditguard-select" class="wp-dropdown-select">
+                                                <select id="creditguard-select" name="payment-dropdown1" class="wp-dropdown-select">
                                                     <option value="default">Basic</option>
                                                     <option value="pro">Pro</option>
                                                     <option value="advance">Advance</option>
@@ -269,7 +269,7 @@
                                         <div class="wp-card-dropdown">
                                             <label for="tranzila-select" class="m-0"></label>
                                             <div class="payment-dropdown wp-dropdown">
-                                                <select id="tranzila-select" class="wp-dropdown-select">
+                                                <select id="tranzila-select" name="payment-dropdown2"  class="wp-dropdown-select">
                                                     <option value="default">Basic</option>
                                                     <option value="pro">Pro</option>
                                                     <option value="advance">Advance</option>
@@ -350,7 +350,7 @@
                             <div class="my-plugin-card-header">
                                 <form action="/">
                                     <div class="filter-dropdown wp-dropdown">
-                                        <select name="filter" id="filter">
+                                        <select name="filter" name="filter" id="filter">
                                             <option value="filter" selected>Filter</option>
                                             <option value="2">-</option>
                                             <option value="3">-</option>
@@ -1546,7 +1546,7 @@
                             <form action="/" class="uig-mb-25">
                                 <label class="payment-label">Select Billing Profile</label>
                                 <div class="payment-dropdown wp-dropdown">
-                                    <select>
+                                    <select name="payment-dropdown3">
                                         <option value="default">Use default</option>
                                         <option value="2">-</option>
                                         <option value="3">-</option>
