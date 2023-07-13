@@ -28459,6 +28459,9 @@ CSS table of content
   margin-top: 9px;
   margin-bottom: 17px;
 }
+.wp-plugins-card-body form label {
+  display: none;
+}
 .wp-plugins-card-body form input {
   padding: 4px;
   font-weight: 500;
