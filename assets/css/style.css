@@ -29664,13 +29664,29 @@ button:focus, button:active, button:focus-visible,
   justify-content: flex-start;
   margin-bottom: 17px;
 }
-.modal-checkbox .checkbox {
-  border-radius: 4px;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  height: 18px;
-  width: 18px;
+.modal-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.modal-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .modal-checkbox label {
+  position: relative;
+  cursor: pointer;
   color: #444;
   font-family: Inter;
   font-size: 13px;
@@ -29681,6 +29697,20 @@ button:focus, button:active, button:focus-visible,
 }
 .modal-checkbox label a {
   color: #35B7F3;
+}
+.modal-checkbox label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+  height: 18px;
+  width: 18px;
 }
 
 .payment-modal-content2 {
