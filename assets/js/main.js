@@ -4,12 +4,20 @@ $(document).ready(function () {
         $('#sideMenu').removeClass('hide');
         $('.user-body-section').addClass('active');
     });
+    $('.side-menu .side-menu-list .accordion-button, .side-menu .side-menu-list a').hover(function () {
+        $('#sideMenu').addClass('active');
+        $('#sideMenu').removeClass('hide');
+        $('.user-body-section').addClass('active');
+    });
     $('#sideMenuCloseBtn').click(function () {
         $('#sideMenu').toggleClass('hide');
-        $('#sideMenu').removeClass('active');
+        $('#sideMenu').addClass('active');
         $('.user-body-section').removeClass('active');
     });
 });
+
+
+
 $(document).ready(function () {
     $('#complete-payment-btn').click(function () {
         $('.payment-modal-content1').hide();

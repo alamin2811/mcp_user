@@ -28990,27 +28990,76 @@ user-body
 
 .side-menu.active {
   animation: sideMenuShow 0.4s linear;
-  transform: translateX(0px);
 }
 .side-menu.hide {
-  transform: translateX(-300px);
   animation: sideMenuHide 0.4s linear;
+  width: 75px;
+}
+.side-menu.hide .side-menu-list .accordion-button img, .side-menu.hide .side-menu-list a img {
+  min-width: 18px;
+}
+.side-menu.hide .side-menu-list .accordion-button span, .side-menu.hide .side-menu-list a span {
+  display: none;
+}
+.side-menu.hide .side-menu-list .accordion-button::after, .side-menu.hide .side-menu-list a::after {
+  display: none;
+}
+.side-menu.hide .side-menu-footer p {
+  display: none;
+}
+.side-menu.hide .side-menu-close-btn img {
+  transform: rotate(-90deg);
+}
+
+.submenu-list-content ul {
+  padding-left: 60px;
+  margin: 0px;
+  list-style: none;
+}
+.submenu-list-content ul li {
+  padding: 0px !important;
+}
+.submenu-list-content ul li a {
+  background: transparent !important;
+  color: #444;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 0px 5px;
+  position: relative;
+  transition: 0.3s;
+}
+.submenu-list-content ul li a.active, .submenu-list-content ul li a:hover {
+  color: #35B7F3;
+}
+.submenu-list-content ul li a.active::before, .submenu-list-content ul li a:hover::before {
+  background: #35B7F3;
+}
+.submenu-list-content ul li a::before {
+  content: "";
+  padding: 4px;
+  border-radius: 50%;
+  background: #cccccc;
+  position: absolute;
+  left: -18px;
 }
 
 @keyframes sideMenuHide {
   from {
-    transform: translateX(0px);
+    width: 275px;
   }
   to {
-    transform: translateX(-300px);
+    width: 75px;
   }
 }
 @keyframes sideMenuShow {
   from {
-    transform: translateX(-300px);
+    width: 75px;
   }
   to {
-    transform: translateX(0px);
+    width: 275px;
   }
 }
 .mobile-menu-top {

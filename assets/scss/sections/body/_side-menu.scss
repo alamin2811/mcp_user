@@ -219,22 +219,81 @@
 .side-menu{
     &.active{
         animation: sideMenuShow 0.4s linear;
-        transform: translateX(0px);
     }
     &.hide{
-        transform: translateX(-300px);
         animation: sideMenuHide 0.4s linear;
+        width: 75px;
+        .side-menu-list{
+            .accordion-button, a{
+                img{
+                    min-width: 18px;
+                }
+                span{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        .side-menu-footer {
+            p{
+                display: none;
+            }
+        }
+        .side-menu-close-btn{
+            img{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+.submenu-list-content{
+    ul{
+        padding-left: 60px;
+        margin: 0px;
+        list-style: none;
+        li{
+            padding: 0px !important;
+            a{
+                background: transparent !important;
+                color: #444;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                padding: 0px 5px;
+                position: relative;
+                transition: 0.3s;
+                &.active, &:hover{
+                    color: #35B7F3;
+                    &::before{
+                        background: #35B7F3;
+                    }
+                }
+                &::before{
+                    content: '';
+                    padding: 4px;
+                    border-radius: 50%;
+                    background: #cccccc;
+                    position: absolute;
+                    left: -18px;
+                }
+            }
+        }
     }
 }
 
 
 @keyframes sideMenuHide {
-    from { transform: translateX(0px); }
-    to { transform: translateX(-300px); }
+    from { width: 275px; }
+    to { width: 75px; }
   }
 @keyframes sideMenuShow {
-    from { transform: translateX(-300px); }
-    to { transform: translateX(0px); }
+    from { width: 75px; }
+    to { width: 275px; }
   }
 
 
