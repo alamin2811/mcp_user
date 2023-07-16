@@ -18,6 +18,10 @@ $(document).ready(function () {
         $('.crm-card-section').toggle();
         $('.select-plan-section').toggle();
     });
+    $('.get-start-btn').click(function () {
+        $('.select-plan-section').toggle();
+        $('.business-detail-section').toggle();
+    });
 });
 
 /*-- best pricing selector scripts start --*/

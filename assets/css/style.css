@@ -30525,3 +30525,6 @@ crm style
 }
 
 /*-- pricing-section end --*/
+.business-detail-section {
+  display: none;
+}
