@@ -12,9 +12,49 @@ $(document).ready(function () {
     $('#sideMenuCloseBtn').click(function () {
         $('#sideMenu').toggleClass('hide');
         $('#sideMenu').addClass('active');
-        $('.user-body-section').removeClass('active');
+        $('.user-body-section').toggleClass('active');
+    });
+    $('#startFreeBtn').click(function () {
+        $('.crm-card-section').toggle();
+        $('.select-plan-section').toggle();
     });
 });
+
+/*-- best pricing selector scripts start --*/
+var bestPricingSelector = $(".best-pricing-selector");
+if (bestPricingSelector.length) {
+    $(".best-pricing-monthly-btn").on("click", function () {
+        $("#best-pricing-selector").prop("checked", false);
+        $(".best-pricing-grid.monthly").css("display", "flex");
+        $(".best-pricing-grid.yearly").css("display", "none");
+        $(".best-pricing-monthly-btn").addClass("active");
+        $(".best-pricing-yearly-btn").removeClass("active");
+    });
+
+    $(".best-pricing-yearly-btn").on("click", function () {
+        $("#best-pricing-selector").prop("checked", true);
+        $(".best-pricing-grid.monthly").css("display", "none");
+        $(".best-pricing-grid.yearly").css("display", "flex");
+        $(".best-pricing-monthly-btn").removeClass("active");
+        $(".best-pricing-yearly-btn").addClass("active");
+    });
+
+    $("#best-pricing-selector").on("change", function () {
+        if (this.checked) {
+            $(".best-pricing-grid.monthly").css("display", "none");
+            $(".best-pricing-grid.yearly").css("display", "flex");
+            $(".best-pricing-monthly-btn").removeClass("active");
+            $(".best-pricing-yearly-btn").addClass("active");
+        } else {
+            $(".best-pricing-grid.monthly").css("display", "flex");
+            $(".best-pricing-grid.yearly").css("display", "none");
+            $(".best-pricing-monthly-btn").addClass("active");
+            $(".best-pricing-yearly-btn").removeClass("active");
+        }
+    });
+}
+/*-- best pricing selector scripts end --*/
+
 
 
 
